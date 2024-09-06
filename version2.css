@@ -1,0 +1,305 @@
+.vers2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+    background: #212630;
+}
+
+.vers2-top {
+    display: flex;
+
+    gap: 20px;
+}
+
+.vers2-amount-notice {
+    background: linear-gradient(to bottom, rgba(49, 84, 141, 0.9), rgba(49, 84, 141, 0.5));
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 15px;
+    gap: 5px;
+    /* margin-top: 10px; */
+    /* margin-bottom: 20px; */
+}
+
+.vers2-amount-notice img {
+    width: 10px;
+}
+
+
+
+.vers2-amount-notice span {
+    font-size: 9px;
+    font-weight: 500;
+    color: white
+}
+
+.vers2-amount-head {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.vers2-amount-head h2{
+    color: white;
+    font-size: 24px;
+}
+.vers2-amount-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+
+.vers2-amount-card {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: url('./images/vers2-card-bg.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: background-size 1.0s ease-in-out;
+    position: relative;
+
+    border: 1px solid red;
+    cursor: pointer;
+    
+}
+
+
+.card-cont {
+    z-index: 2;
+    margin-left: 5px;
+}
+
+.vers2-amount-card  .card-cont  p {
+    color: white;
+}
+
+.vers2-amount-card  .card-cont  span {
+    color: white;
+    font-size: 14px;
+}
+
+.vers2-amount-card-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 10px;
+}
+
+.vers2-amount-card-price span:first-child{
+    color: white;
+    z-index: 2;
+    font-size: 11px;
+}
+
+.vers2-amount-card-price span:last-child{
+    color: white;
+    z-index: 2;
+    font-size: 20px;
+}
+
+.vers2-amount-card.active .top {
+    background-color: #3d4d7f67;
+}
+
+.vers2-amount-card.active {
+    border: 1px solid #a38afc;
+}
+
+.vers2-jpeg {
+    width: 30%;
+    /* position: relative; */
+}
+
+.vers2-amount {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.vers2-jpeg img {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.vers2-riot {
+    /* width: 80%; */
+    position: relative;
+    padding: 20px 0px;
+    background: linear-gradient(to left, rgba(143, 39, 48, 0.1), rgba(143, 39, 48, 1));
+}
+
+.vers2-riot-content {
+    width: 30%;
+    /* margin: auto; */
+    /* padding: 20px 15px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 50px;
+    position: relative;
+}
+
+
+.vers2-riot-title div {
+    background: #6042f0;
+    color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    border: 3px solid white;
+    
+    position: absolute;
+    top: 0;
+}
+
+.vers2-riot-title p {
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+.vers2-riot-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.vers2-riot-input input {
+    border-color: #8f8f8f1f;
+    width: 100%;
+    padding: 10px;
+    background: #f6f5fbe1;
+    border-radius: 5px;
+    outline: none;
+}
+
+.vers2-riot-input input::placeholder {
+    color: #535353;
+    font-size: 12px;
+}
+
+.vers2-riot-exp {
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 500;
+    width: 90%;
+    color: #a7a7a7;
+}
+
+
+
+.vers2-payment-content {
+    
+    width: 95%;
+    /* margin: auto; */
+    
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* background: #000; */
+}
+
+.vers2-payment-box {
+    background: #f6f5fbe1;
+    border: 2px solid #c2c7d4;
+    border-radius: 10px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.vers2-payment-box span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #3d4e7f;
+}
+
+.vers2-payment-box-select {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.vers2-payment-box-select div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vers2-payment-box-select div img {
+    width: 15px;
+}
+
+.vers2-payment-box-select p {
+    font-size: 11px;
+    font-weight: 600;
+    color: #3d4e7f;
+}
+
+
+.vers2-payment-content a {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6548f7;
+    margin-top: 5px;
+}
+
+.vers2-bottom {
+    width: 100%;
+    background: rgba(49, 84, 141, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0px;
+}
+
+.vers2-bottom-head {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(49, 84, 141, 0.9), rgba(49, 84, 141, 0.2)); 
+    padding: 8px;
+}
+
+
+.vers2-bottom-head p {
+    color: white;
+}
+
+
+.vers2-bottom-cont {
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+}
